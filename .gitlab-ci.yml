@@ -20,3 +20,4 @@ update_rules:
   - python3 update_l3_fw_rules.py "$MERAKI_ORG_NAME" "$COMPLIANT_TEMPLATE" "$TEMPLATES_TO_CONFIGURE"
   only:
   - schedule
+
