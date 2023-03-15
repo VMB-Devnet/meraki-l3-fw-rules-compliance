@@ -66,9 +66,11 @@ git push origin main
     - **Dashboard API access** > **Enable access to the Cisco Meraki Dashboard API.**
         - Save Changes
     - Generate API Key
+  
 ![meraki-profile](https://raw.githubusercontent.com/VMB-Devnet/meraki-l3-fw-rules-compliance/main/images/meraki-profile.png)
-        - **API access** > **Generate new API Key**
-        - Store the key safely.
+
+- **API access** > **Generate new API Key**
+- Store the key safely.
 
 **7. Copy the names of the baseline FW Template & Templates you wish to become compliant. These can be found under Organization > Configure > Configuration Templates**
 
