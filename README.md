@@ -100,6 +100,10 @@ git push origin main
 
 - Edit the 'tags' under the 'update_rules' section of the yaml file and replace 'shell' with your runners tag.
 
+![gitlab-ci-file-tags](https://raw.githubusercontent.com/VMB-Devnet/meraki-l3-fw-rules-compliance/main/images/update-ci-tags.png)
+
+- Commit the changes.
+
 **10. Setup CI/CD Schedule to run on hourly rate.**
 - Browse to the repository
 - **CI/CD** > **Schedules** > **New Schedule**
@@ -115,10 +119,10 @@ git push origin main
 
 - Click on the Green Tick and select 'updated-rules'. If there is a red cross, something has gone wrong with your CI/CD run. If it is blue, this means the pipeline is still running.
 
-![cicd-schedule-run](https://raw.githubusercontent.com/VMB-Devnet/meraki-l3-fw-rules-compliance/main/images/test-schedule-run.png)
+![cicd-schedule-run](https://raw.githubusercontent.com/VMB-Devnet/meraki-l3-fw-rules-compliance/main/images/cicd-schedule-run-stage.png)
 
 - You will now see the Bash output from your runner. This should look something like below if it has updated your template rules:
 
 ![cicd-schedule-bash](https://raw.githubusercontent.com/VMB-Devnet/meraki-l3-fw-rules-compliance/main/images/cicd-schedule-bash.png)
 
-##### Congratulations! You have now setup your scheduled pipeline so its runs every hour and will ensure your templates are compliant with your master template.
+#### Congratulations! You have now setup your scheduled pipeline so its runs every hour and will ensure your templates are compliant with your master template.
