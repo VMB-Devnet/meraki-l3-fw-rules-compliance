@@ -1,0 +1,25 @@
+image: python:slim-buster
+
+variables:
+  MERAKI_ORG_NAME: $MERAKI_ORG_NAME
+  COMPLIANT_TEMPLATE: $COMPLIANT_TEMPLATE
+  TEMPLATES_TO_CONFIGURE: $TEMPLATES_TO_CONFIGURE
+  MERAKI_API_KEY: $MERAKI_API_KEY
+
+before_script:
+  - python3 -m venv venv
+  - source venv/bin/activate
+  - pip install -r requirements.txt
+
+update_rules:
+  tags:
+  - shell
+  script:
+  - source venv/bin/activate
+  - echo 'Meraki Org Name:' $MERAKI_ORG_NAME
+  - echo 'Compliant Template:' $COMPLIANT_TEMPLATE
+  - echo 'Templates to Configure:' $TEMPLATES_TO_CONFIGURE
+  - python3 update_l3_fw_rules.py "$MERAKI_ORG_NAME" "$COMPLIANT_TEMPLATE" "$TEMPLATES_TO_CONFIGURE"
+  only:
+  - schedule
+
