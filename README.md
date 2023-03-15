@@ -53,7 +53,7 @@ git push origin main
 
 ![git-push](https://raw.githubusercontent.com/VMB-Devnet/meraki-l3-fw-rules-compliance/main/images/git-push.png)
 
-**5. Confirm that the files have been pushed to the repository.**
+**5. Confirm that the files have been pushed to the repository. It should look like the following: **
 
 ![new-files-in-repo](https://raw.githubusercontent.com/VMB-Devnet/meraki-l3-fw-rules-compliance/main/images/new-repo-with-files.png)
 
@@ -75,7 +75,7 @@ git push origin main
 **8. Setup GitLab CI Variables:**
 - Browse to the new repository
 - Navigate to **Settings** > **CI/CD**
-- 
+
 ![ci-settings-1](https://raw.githubusercontent.com/VMB-Devnet/meraki-l3-fw-rules-compliance/main/images/cicd-variable-settings-1.png)
 
 - Expand the Variables section
@@ -92,7 +92,7 @@ git push origin main
 ![templates-to-configure-var](https://raw.githubusercontent.com/VMB-Devnet/meraki-l3-fw-rules-compliance/main/images/templates-to-configure-variable.png)
 
 **9. Update the .gitlab-ci file with your runners tag:**
-- You can find the available runners in your repository under CI/CD > Runners. Tags are the words highlighted in blue.
+- You can find the available runners in your repository under **CI/CD** > **Runners**. Tags are the words highlighted in blue.
 
 ![gitlab-runner-tags](https://raw.githubusercontent.com/VMB-Devnet/meraki-l3-fw-rules-compliance/main/images/gitlab-runners.png)
 
@@ -100,14 +100,14 @@ git push origin main
 
 **10. Setup CI/CD Schedule to run on hourly rate.**
 - Browse to the repository
-- CI/CD > Schedules > New Schedule
+- **CI/CD** > **Schedules** > **New Schedule**
 - The schedule is set in cron syntax. I used the Custom setting with '0 * * * *' which will run every hour.
 - Save pipeline schedule
 
 **11. Test the schedule pipeline**
 
 - Click on the play button within the schedules menu which will trigger the pipeline.
-- Click on the 'Pipelines page' button which appears after you press play. This can also be found under CI/CD > Pipelines
+- Click on the 'Pipelines page' button which appears after you press play. This can also be found under **CI/CD** > **Pipelines**
 
 ![test-schedule-run](https://raw.githubusercontent.com/VMB-Devnet/meraki-l3-fw-rules-compliance/main/images/test-schedule-run.png)
 
@@ -115,7 +115,7 @@ git push origin main
 
 ![cicd-schedule-run](https://raw.githubusercontent.com/VMB-Devnet/meraki-l3-fw-rules-compliance/main/images/test-schedule-run.png)
 
-- You will now see the Bash output from your runner. This should look something like below if it has updated your template rules.
+- You will now see the Bash output from your runner. This should look something like below if it has updated your template rules:
 
 ![cicd-schedule-bash](https://raw.githubusercontent.com/VMB-Devnet/meraki-l3-fw-rules-compliance/main/images/cicd-schedule-bash.png)
 
