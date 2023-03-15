@@ -67,7 +67,7 @@ git push origin main
         - Store the key safely.
 
 **7. Copy the names of the baseline FW Template & Templates you wish to become compliant. These can be found under Organization > Configure > Configuration Templates**
-- Add photo of configuration-templates.
+![meraki-templates](https://raw.githubusercontent.com/VMB-Devnet/meraki-l3-fw-rules-compliance/main/images/configuration-templates.png)
 
 **8. Setup GitLab CI Variables:**
 - Browse to the new repository
