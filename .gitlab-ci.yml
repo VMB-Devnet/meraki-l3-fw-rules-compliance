@@ -1,5 +1,3 @@
-image: python:slim-buster
-
 variables:
   MERAKI_ORG_NAME: $MERAKI_ORG_NAME
   COMPLIANT_TEMPLATE: $COMPLIANT_TEMPLATE
