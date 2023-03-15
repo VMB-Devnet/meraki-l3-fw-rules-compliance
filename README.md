@@ -32,8 +32,8 @@ After completion of the below, you should have a scheduled pipeline which will r
 **2. Clone the repository to your local workstation and open the folder into which the repository was cloned.**
 
 ```
-git clone 'repository-link-here'
-cd 'repo-folder-name'
+git clone https://github.com/VMB-Devnet/meraki-l3-fw-rules-compliance.git
+cd meraki-l3-fw-rules-compliance
 ```
 
 **3. Add new git remote, pointing to your new blank project. You can find the project URL from the following:**
@@ -42,7 +42,7 @@ cd 'repo-folder-name'
 
 ```
 git remote remove origin
-git remote add origin 'gitlab-blank-project-url'
+git remote add origin <gitlab-project-url>
 ```
 
 **4. Push to new blank project repository. You will be prompted to authenticate.**
