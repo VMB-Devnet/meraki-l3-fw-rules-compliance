@@ -66,7 +66,7 @@ git push origin main
     - **Dashboard API access** > **Enable access to the Cisco Meraki Dashboard API.**
         - Save Changes
     - Generate API Key
-        - Photo to my profile
+![meraki-profile](https://raw.githubusercontent.com/VMB-Devnet/meraki-l3-fw-rules-compliance/main/images/meraki-profile.png)
         - **API access** > **Generate new API Key**
         - Store the key safely.
 
