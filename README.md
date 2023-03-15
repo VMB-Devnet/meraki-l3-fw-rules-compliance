@@ -11,7 +11,7 @@ After completion of the below, you should have a scheduled pipeline which will r
 **1. Installed and working GitLab instance (Either Self Hosted/SaaS)**
 > [GitLab Self Hosted Installation](https://docs.gitlab.com/ee/install/install_methods.html) 
 
-**2. CI Runner setup with python 3.8+ installed and appropriate tags and connected to GitLab**
+**2. CI Runner setup with Python 3.8+ installed and appropriate tags and connected to GitLab**
 > [GitLab runner installation](https://docs.gitlab.com/runner/install/)  
 
 **3. Meraki Organization with Read/Write access.**
