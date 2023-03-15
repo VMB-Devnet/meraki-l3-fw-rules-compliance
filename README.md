@@ -51,6 +51,8 @@ git remote add origin <gitlab-project-url>
 git push origin main
 ```
 
+- It should look something like the following:
+
 ![git-push](https://raw.githubusercontent.com/VMB-Devnet/meraki-l3-fw-rules-compliance/main/images/git-push.png)
 
 **5. Confirm that the files have been pushed to the repository. It should look like the following: **
